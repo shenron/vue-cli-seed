@@ -1,7 +1,7 @@
-'use strict';
+
 
 export default (id) => {
-  var months = [
+  const months = [
     'January',
     'February',
     'March',
@@ -13,12 +13,11 @@ export default (id) => {
     'September',
     'October',
     'November',
-    'December'
+    'December',
   ];
 
   if (Number.isInteger(id)) {
     return months[id];
-  } else {
-    return months;
   }
+  return months;
 };

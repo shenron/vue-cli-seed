@@ -23,35 +23,35 @@
 </template>
 
 <script>
-  import $ from 'jquery';
-  import dateStringify from '@/base/date/stringify';
+import $ from 'jquery';
+import dateStringify from '@/base/date/stringify';
 
-  export default {
-    name: 'HelloWorld',
-    computed: {
-      stringifiedDate() {
-        return dateStringify('DD-MM-YYYY H:M:s', new Date(this.dateNow), true);
-      }
+export default {
+  name: 'HelloWorld',
+  computed: {
+    stringifiedDate() {
+      return dateStringify('DD-MM-YYYY H:M:s', new Date(this.dateNow), true);
     },
-    beforeMount() {
-      const self = this;
+  },
+  beforeMount() {
+    const self = this;
 
-      setInterval(() => {
-        self.dateNow = Date.now();
-      }, 1000);
-    },
-    mounted() {
-      $('[data-toggle="tooltip"]').tooltip();
-    },
-    data() {
-      return {
-        dateNow: Date.now()
-      };
-    },
-    props: {
-      msg: String
-    }
-  };
+    setInterval(() => {
+      self.dateNow = Date.now();
+    }, 1000);
+  },
+  mounted() {
+    $('[data-toggle="tooltip"]').tooltip();
+  },
+  data() {
+    return {
+      dateNow: Date.now(),
+    };
+  },
+  props: {
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
