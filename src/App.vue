@@ -9,7 +9,7 @@
       </div>
       <div class="col-sm">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>FontAwesome</strong> works <i class="fas fa-camera-retro"></i>
+          <strong>FontAwesome</strong> works <font-awesome-icon icon="camera-retro"/>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
