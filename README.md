@@ -8,5 +8,8 @@ Add extra dependencies
 # Start
 `npm run serve`
 
+# Start CookBook
+`npm run serve cookbook`
+
 # Build
 `npm run build`
