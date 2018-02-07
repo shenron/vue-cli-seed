@@ -21,7 +21,7 @@ export default (pattern, date, translate) => {
     return `${date.getDate()} ${monthNames(date.getMonth()).substr(0, 3)} ${date.getFullYear()} ${h}:${m}`;
   };
 
-  // if not a valid Date return the paramter
+  // if not a valid Date return the parameter
   if (Number.isNaN(new Date(date).getTime())) {
     return date;
   }

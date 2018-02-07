@@ -9,7 +9,8 @@
       </div>
       <div class="col-sm">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>FontAwesome</strong> works <font-awesome-icon icon="camera-retro"/>
+          <strong>FontAwesome</strong> works
+          <font-awesome-icon icon="camera-retro"/>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -31,14 +32,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import './node_modules/bootstrap/scss/bootstrap';
-#app {
-  $color: #2c3e50;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $color;
-  margin-top: 60px;
-}
+  @import './node_modules/bootstrap/scss/bootstrap';
+
+  #app {
+    $color: #2c3e50;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $color;
+    margin-top: 60px;
+  }
 </style>
